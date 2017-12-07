@@ -1,8 +1,12 @@
 # OverSeer
 
-is a tiny package to help preview any form data before submitting it to the db.
+[![Latest Stable Version](https://img.shields.io/packagist/v/ctf0/over-seer.svg?style=for-the-badge)](https://packagist.org/packages/ctf0/over-seer) [![Total Downloads](https://img.shields.io/packagist/dt/ctf0/over-seer.svg?style=for-the-badge)](https://packagist.org/packages/ctf0/over-seer)
+
+A tiny package to help preview any form data before submitting to the db.
 
 >If you are looking to have a control over the saved content as well, you may want to give [Odin](https://github.com/ctf0/Odin) a try too.
+
+<br>
 
 ## Installation
 
@@ -34,6 +38,8 @@ new Vue({
     el: '#app'
 })
 ```
+
+<br>
 
 ## Usage
 
@@ -67,11 +73,8 @@ new Vue({
 
     just like you would usually do with any model.
 
-## Notes
+<br>
 
-- because we are displaying the form content before its actually saved into the database,
-it means that any `accessors, mutators, helper functions, etc...` wont be accessible, because those aren't a real model data until you actually submit the form.
+## Notes for `WYSIWYG Editors`
 
-- if any of your form inputs is being handled by a **WYSIWYG Editor** like `tinyMCE, CKEditor, etc..`, sadly they dont reflect the content to the original input until the form is submitted,
-
-    however in case of `tinyMCE` we are in luck as it has [`tinyMCE.triggerSave()`](https://www.tinymce.com/docs/api/tinymce/tinymce.editormanager/#triggersave) which we use it before showing the preview, so if you are using any other editor, any PRs are welcomes :trophy:
+- we currently support `tinyMCE` but if you are using any other editor, PRs are welcome :trophy:
