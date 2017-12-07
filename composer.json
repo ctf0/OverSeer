@@ -1,0 +1,38 @@
+{
+    "name": "ctf0/over-seer",
+    "description": "preview form data before saving to the db",
+    "keywords": [
+        "ctf0",
+        "laravel",
+        "overseer"
+    ],
+    "homepage": "https://github.com/ctf0/OverSeer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muah",
+            "email": "muah003@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "~7.0",
+        "illuminate/support": "^5.4",
+        "ctf0/package-changelog": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ctf0\\OverSeer\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ctf0\\OverSeer\\OverSeerServiceProvider"
+            ]
+        },
+        "changeLog": "logs"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
