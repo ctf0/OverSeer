@@ -20,12 +20,8 @@ export default {
     },
     data() {
         return {
-            formData: null,
-            OSForm: null
+            formData: null
         }
-    },
-    updated() {
-        this.OSForm.target.submit()
     },
     methods: {
         showPreview(event) {
@@ -37,7 +33,10 @@ export default {
                     empty: true
                 })
             )
-            this.OSForm = event
+
+            this.$nextTick(() => {
+                event.target.submit()
+            })
         },
         WYSIWYG() {
             if (typeof tinyMCE != 'undefined') {

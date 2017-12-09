@@ -25,7 +25,7 @@ class OverSeerServiceProvider extends ServiceProvider
     {
         // resources
         $this->publishes([
-            __DIR__ . '/resources/assets' => resource_path('assets/vendor/OverSeer'),
+            __DIR__ . '/resources/js' => resource_path('assets/vendor/OverSeer'),
         ], 'assets');
     }
 
