@@ -9,17 +9,8 @@ class OverSeerControler extends Controller
 {
     public function show(Request $request)
     {
-        // turn data into array
-        $data = json_decode($request->data, true);
+        $data = json_decode($request->data);
 
-        if (array_key_exists('_token', $data)) {
-            unset($data['_token']);
-        }
-
-        // turn array into fluent object
-        // $obj->some->nested
-        $obj = json_decode(json_encode($data));
-
-        return view($request->template)->withData($obj);
+        return view($request->template, compact('data'));
     }
 }

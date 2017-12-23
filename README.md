@@ -54,9 +54,10 @@ new Vue({
 - then add the vue component anywhere near that form
     + `form-id` is the id you gave to your form, in that case `my-form`
     + `template` is where you want to display the data, ex `views/posts/overseer`
+    + `title` optional url title, so instead of just `my.app/overseer` it would be `my.app/overseer/my-awesome-title`
 
     ```blade
-    <over-seer form-id="my-form" template="posts.overseer">
+    <over-seer form-id="my-form" template="posts.overseer" title="my-awesome-title">
         <button>Preview</button>
     </over-seer>
     ```

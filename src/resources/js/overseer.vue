@@ -1,7 +1,7 @@
 <template>
     <form target="_blank"
           method="post"
-          action="/overseer"
+          :action="title ? `/overseer/${title}` : '/overseer'"
           @submit.prevent="showPreview($event)">
 
         <input type="hidden" name="template" :value="template">
@@ -15,8 +15,19 @@ const serialize = require('form-serialize')
 
 export default {
     props: {
-        formId: {required: true}, // the form we want to preview its data
-        template: {required: true} // where will we review the data
+        formId: { // the form we want to preview its data
+            type: String,
+            required: true
+        },
+        template: { // where will we review the data
+            type: String,
+            required: true
+        },
+        title: { // optional page url
+            type: String,
+            required: false,
+            default: ''
+        }
     },
     data() {
         return {
@@ -38,6 +49,8 @@ export default {
                 event.target.submit()
             })
         },
+
+        // editors support
         WYSIWYG() {
             if (typeof tinyMCE != 'undefined') {
                 tinyMCE.triggerSave()

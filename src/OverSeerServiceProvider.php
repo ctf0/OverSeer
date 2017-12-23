@@ -36,7 +36,7 @@ class OverSeerServiceProvider extends ServiceProvider
      */
     protected function route()
     {
-        Route::post('overseer', '\ctf0\OverSeer\Controller\OverSeerControler@show')->name('overseer');
+        Route::post('overseer/{title?}', '\ctf0\OverSeer\Controller\OverSeerControler@show')->name('overseer');
     }
 
     /**
