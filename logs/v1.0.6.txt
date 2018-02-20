@@ -1,0 +1,1 @@
+- add web middleware to the route so you can access the auth user

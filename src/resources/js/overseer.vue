@@ -4,6 +4,7 @@
           :action="title ? `/overseer/${title}` : '/overseer'"
           @submit.prevent="showPreview($event)">
 
+        <input type="hidden" name="_token" :value="csrf">
         <input type="hidden" name="template" :value="template">
         <input type="hidden" name="data" :value="formData">
         <slot/>
@@ -22,6 +23,11 @@ export default {
         template: { // where will we review the data
             type: String,
             required: true
+        },
+        csrf: {
+            type: String,
+            required: true,
+            default: ''
         },
         title: { // optional page url
             type: String,

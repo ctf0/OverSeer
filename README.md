@@ -58,7 +58,11 @@ new Vue({
     + `title` optional url title, so instead of just `my.app/overseer` it would be `my.app/overseer/my-awesome-title`
 
     ```blade
-    <over-seer form-id="my-form" template="posts.overseer" title="my-awesome-title">
+    <over-seer form-id="my-form"
+        template="posts.overseer"
+        title="my-awesome-title"
+        csrf="{{ csrf_token() }}">
+
         <button>Preview</button>
     </over-seer>
     ```
