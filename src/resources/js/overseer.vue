@@ -62,7 +62,6 @@ export default {
                 tinyMCE.triggerSave()
             }
         }
-    },
-    render() {}
+    }
 }
 </script>

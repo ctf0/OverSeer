@@ -34,5 +34,10 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "post-package-install": [
+            "@php artisan vendor:publish --provider=\"ctf0\\OverSeer\\OverSeerServiceProvider\""
+        ]
     }
 }

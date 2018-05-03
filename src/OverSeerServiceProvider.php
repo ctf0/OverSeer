@@ -2,7 +2,6 @@
 
 namespace ctf0\OverSeer;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class OverSeerServiceProvider extends ServiceProvider
@@ -36,9 +35,11 @@ class OverSeerServiceProvider extends ServiceProvider
      */
     protected function route()
     {
-        Route::post('overseer/{title?}', '\ctf0\OverSeer\Controller\OverSeerControler@show')
+        app('router')
+            ->post('overseer/{title?}')
+            ->uses('\ctf0\OverSeer\Controller\OverSeerController@show')
             ->name('overseer')
-            ->middleware(['web']);
+            ->middleware('web');
     }
 
     /**

@@ -15,30 +15,34 @@ A tiny package to help preview any form data before submitting to the db.
 
 - (Laravel < 5.5) add the service provider.
 
-```php
-'providers' => [
-    ctf0\OverSeer\OverSeerServiceProvider::class,
-];
-```
+    ```php
+    'providers' => [
+        ctf0\OverSeer\OverSeerServiceProvider::class,
+    ];
+    ```
+
+- publish the package assets with
+
+    `php artisan vendor:publish --provider="ctf0\OverSeer\OverSeerServiceProvider"`
 
 - install dependencies
 
-```bash
-yarn add vue form-serialize
-# or
-npm install vue form-serialize --save
-```
+    ```bash
+    yarn add vue form-serialize
+    # or
+    npm install vue form-serialize --save
+    ```
 
 - add this one liner to your main js file and run `npm run watch` to compile your `js/css` files.
     - if you are having issues [Check](https://ctf0.wordpress.com/2017/09/12/laravel-mix-es6/).
 
-```js
-require('./../vendor/OverSeer/manager')
+    ```js
+    require('../vendor/OverSeer/manager')
 
-new Vue({
-    el: '#app'
-})
-```
+    new Vue({
+        el: '#app'
+    })
+    ```
 
 <br>
 
