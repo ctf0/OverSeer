@@ -1,7 +1,6 @@
 # OverSeer
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer) [![Total Downloads](https://img.shields.io/packagist/dt/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer)
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)](https://en.cryptobadges.io/donate/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)
+[![Latest Stable Version](https://img.shields.io/packagist/v/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer) [![Total Downloads](https://img.shields.io/packagist/dt/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer) [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)](https://en.cryptobadges.io/donate/16ri7Hh848bw7vxbEevKHFuHXLmsV8Vc9L)
 
 A tiny package to help preview any form data before submitting to the db.
 
