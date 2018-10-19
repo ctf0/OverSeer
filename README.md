@@ -1,10 +1,11 @@
-# OverSeer
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer) [![Total Downloads](https://img.shields.io/packagist/dt/ctf0/over-seer.svg)](https://packagist.org/packages/ctf0/over-seer)
+<h1 align="center">
+    OverSeer
+    <br>
+    <a href="https://packagist.org/packages/ctf0/over-seer"><img src="https://img.shields.io/packagist/v/ctf0/over-seer.svg" alt="Latest Stable Version" /></a> <a href="https://packagist.org/packages/ctf0/over-seer"><img src="https://img.shields.io/packagist/dt/ctf0/over-seer.svg" alt="Total Downloads" /></a>
+</h1>
 
 A tiny package to help preview any form data before submitting to the db.
-
->If you are looking to have a control over the saved content as well, you may want to give [Odin](https://github.com/ctf0/Odin) a try too.
+> If you are looking to have a control over the saved content as well, you may want to give [Odin](https://github.com/ctf0/Odin) a try too.
 
 <br>
 
@@ -37,7 +38,7 @@ A tiny package to help preview any form data before submitting to the db.
 
     ```js
     window.Vue = require('vue')
-    
+
     require('../vendor/OverSeer/manager')
 
     new Vue({
