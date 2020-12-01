@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "php": "^7.0",
         "illuminate/support": ">=5.4 <9.0",
         "ctf0/package-changelog": "*"
     },
