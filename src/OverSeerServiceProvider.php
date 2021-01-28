@@ -45,8 +45,5 @@ class OverSeerServiceProvider extends ServiceProvider
     /**
      * Register any package services.
      */
-    public function register()
-    {
-        $this->app->register(\ctf0\PackageChangeLog\PackageChangeLogServiceProvider::class);
-    }
+    public function register() {}
 }
