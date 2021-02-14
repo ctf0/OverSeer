@@ -38,5 +38,11 @@
         "post-package-install": [
             "@php artisan vendor:publish --provider=\"ctf0\\OverSeer\\OverSeerServiceProvider\""
         ]
-    }
+    },
+    "funding": [
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/ctf0"
+        }
+    ]
 }
