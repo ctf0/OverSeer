@@ -90,3 +90,9 @@ A tiny package to help preview any form data before submitting to the db.
 ## Notes for `WYSIWYG Editors`
 
 - we currently support `tinyMCE` but if you are using any other editor, PRs are welcome :trophy:
+
+<br>
+
+### Security
+
+If you discover any security-related issues, please email [ctf0-dev@protonmail.com](mailto:ctf0-dev@protonmail.com).
